@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@700&family=Roboto+Slab:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
+
+html {
+    height: 100%;
+    width: 100%;
+  }
+  
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body{
+    background-color: rgb(130, 194, 250);
+  }
+
+  header{
+    background: linear-gradient(to right, #f36207, #6c50f7);
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .heading{
+    color: antiquewhite;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-family: 'Roboto Slab', serif;;
+    letter-spacing: 0.5ch;
+    text-shadow: 3px 3px rgb(71, 18, 230);
+  }
+
+  .score{
+    height: 20vh;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .elements{
+    width: 30%;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: rgb(139, 235, 235);
+    border-color: aquamarine;
+    border-radius: 20px;
+  }
+
+  .computer{
+    height: 100%;
+    text-align: center;
+    font-size: 2rem;
+    border-bottom: 1px dashed #eb66d3;
+    border-right: 1px dashed #eb66d3;
+  }
+
+  .user{
+    height: 100%;
+    text-align: center;
+    font-size: 2rem;
+    border-bottom: 1px dashed #eb66d3;
+    border-left: 1px dashed #eb66d3;
+  }
+
+  #computerScore{
+    height: 100%;
+    text-align: center;
+    font-size: 2rem;
+    border-right: 1px dashed #eb66d3;
+  }
+
+  #userScore{
+    height: 100%;
+    text-align: center;
+    font-size: 2rem;
+    border-left: 1px dashed #eb66d3;
+  }
+
+  .container{
+    height: 50vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 5fr 5fr;
+  }
+
+ #ComputerSide img{
+    padding-top: 10%;
+    padding-left: 50%;
+    height: 200px;
+    /* animation: shake 1s linear;
+    animation-iteration-count: 2s; */
+  }
+  
+  #UserSide img{
+    padding-top: 10%;
+    transform: scaleY(-1) rotate(180deg);
+    padding-right: 20%;
+    height: 200px;
+    /* animation: shake 1s linear;
+    animation-iteration-count: 2s; */
+  }
+
+  /* @keyframes shake{
+    0%{
+      transform: rotate(-30deg);
+    }
+    25%{
+      transform: rotate(30deg);
+    }
+    50%{
+      transform: rotate(-30deg);
+    }
+    75%{
+      transform: rotate(30deg);
+    }
+    100%{
+      transform: rotate(0deg);
+    }
+  }  */
+
+
+  .selection{
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .btn{
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .btn button{
+    flex: 1;
+    margin-right: 30px;
+    border-radius: 100px;
+    font-size: xx-large;
+    cursor: pointer;
+    background: linear-gradient(to right, #f70303, #e6ff45);
+    color: antiquewhite;
+  }
+
+  .Winner{
+    display: none;
+    position: absolute;
+    top: 60%;
+    left: 40%;
+    padding-top: 10px;
+    height: 50px;
+    width: 20%;
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    outline: 2px solid rgb(117, 94, 170);
+  }
+
+  .Winner p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    transform: translate(-50deg -50deg);
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-family: 'Alkatra', cursive;
+    font-weight: bold;
+    color: antiquewhite;
+  }
